@@ -66,4 +66,27 @@ If you have any whitespace around your fish or any kind of solid background you 
 
 Now that you have a cool new fish it's time to export it.
 * Click `File -> Export As -> PNG`
-* 
+* Enter a name if you haven't yet
+* Click save
+You can either save it directly into your `Assets` folder or you can save it in another location and copy it into `Assets`.
+
+## The Tres File
+
+Now that you have your fish made it's time to get the .tres file ready. The .tres file is what is gunna tell the game where you can catch the fish, how rare it is, how hard to catch it is, it's name, description, etc., etc...
+There is a template .tres file in the `templates` folder of this github. download that and copy it into your `Resources` folder. Rename it to whatever your fish is gunna be called. I like to make my png and tres names the same to keep things simple later on. So if your png is `customBass.png` rename the tres to `customBass.tres` From there you can either edit it from the Godot editor, or open it in a text editor and edit it there. I suggest using something like VSCode or Notepad++ to edit the file directly.
+
+There are some lines that you won't need to touch, so we won't go over those. We will take a look at the ones that matter to us. 
+
+At the top you'll see 2 `[ext_resource]` lines. In the second line you'll want to change the `path=""` to point to your png file for this fish. ex. `[ext_resource path="res://mods/Steve.MyCoolFish/Assets/customBass.png" type="Texture" id=2]`
+
+The rest of the lines that matter to us I will try to explain what they do to the best of my knowledge. I'm not an expert but if I find out more info I'll make sure to update this guide. On a side note if you have more info that I don't or if I got something wrong, reach out to me on the modding discord and I'll make sure to update the table.
+
+|Property|Value|
+|--------|-----|
+|||
+|||
+|||
+|||
+|||
+|||
+|||

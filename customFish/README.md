@@ -104,3 +104,6 @@ The rest of the lines that matter to us I will try to explain what they do to th
 |sell_multiplier|float|Affects value based on rarity|
 |obtain_xp|int|Xp gained from catching successfully|
 |rare|bool|Weather or not its considered rare like the golden fish and rain fish|
+
+## The main.gd file
+

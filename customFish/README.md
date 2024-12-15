@@ -51,5 +51,19 @@ And the main.gd file is the script that's going to bring it all together.
 ### Making Your Fish
 Most of the fish in this game are 256x256 pixels in size with a few exceptions. You can look at the base fish in the game to see what other sizes are used or you can expirement with sizes yourself to see how the look in game. For this guide we will just stick with 256x256.
 
-I like to use [Photopea](https://www.photopea.com) for anything 2d, so that's what we'll use to make our fish. If you haven't heard of it or used it before it's basically free photoshop you can use in your browser without downloading anything. 
+I like to use [Photopea](https://www.photopea.com) for anything 2d, so that's what we'll use to make our fish. If you haven't heard of it or used it before it's basically free photoshop you can use in your browser without downloading anything. If you prefer to use something else then you can skip this next section, just remember to make your image 256x256(or whatever size format you're gunna use), make the background transparent, and export it as a .png .
 
+#### Photopea
+* Click `New Project`
+* Name it whatever you want
+* Make `height` and `width` 256x256
+* Change background to `transparent`
+* Click create
+
+Now you can create your fish however you want. If you aren't familiar with photopea there are plenty of tutorials, Guides, and videos on just about everything it can do. If you're new and unsure where to start you can search "fish template png" and find a simple template to import into your photopea space. To do that click `File -> Open & Place` and select your template image. then just resize it to fit inside your canvas and work from there. There is a simple template png of a fish in the templates folder of this github if you want to use that.
+
+If you have any whitespace around your fish or any kind of solid background you can use the `Magic Wand` tool to select the background and press `del` to remove it
+
+Now that you have a cool new fish it's time to export it.
+* Click `File -> Export As -> PNG`
+* 

@@ -29,7 +29,21 @@ For your testing to work correctly in the editor you need to autoload the Lure m
 
 While your still in the autoload section go ahead and repeat the steps above to add your mods main.gd to the autoload list
 
+## Start Making Fish
 
+### Setting up
+
+Now that we have our environment setup let's add the relevant folders and files we'll be using to add our fish. Inside the folder for your mod add a `Resources` and `Assets` folder. Your folder structure should now look something like this
+<pre>
+res://
+└── mods/
+    ├── Sulayre.Lure/
+    │   └── ...
+    └── YourAuthorName.YourModName/
+        ├── Resources/
+        ├── Assets/
+        └── main.gd
+</pre>
 
 
 

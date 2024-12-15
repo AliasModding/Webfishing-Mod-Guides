@@ -44,6 +44,8 @@ res://
         ├── Assets/
         └── main.gd
 </pre>
-
+The Resources folder will be where you keep your .tres files (basically the data for your fish; size, rarity, value, etc.).
+The Assets folder is where the .png images for your fish are gunna go.
+And the main.gd file is the script that's going to bring it all together.
 
 

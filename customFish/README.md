@@ -81,12 +81,20 @@ At the top you'll see 2 `[ext_resource]` lines. In the second line you'll want t
 
 The rest of the lines that matter to us I will try to explain what they do to the best of my knowledge. I'm not an expert but if I find out more info I'll make sure to update this guide. On a side note if you have more info that I don't or if I got something wrong, reach out to me on the modding discord and I'll make sure to update the table.
 
-|Property|Value|
-|--------|-----|
-|||
-|||
-|||
-|||
-|||
-|||
-|||
+|Property|Value|Description|
+|--------|-----|-----------|
+|item_name|||
+|item_description|||
+|catch_blurb|||
+|hold_offset|||
+|category|||
+|tier|||
+|catch_difficulty|||
+|catch_speed|||
+|loot_table|||
+|loot_weight|||
+|average_size|||
+|sell_value|||
+|sell_multiplier|||
+|obtain_xp|||
+|rare|||

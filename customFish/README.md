@@ -81,20 +81,27 @@ At the top you'll see 2 `[ext_resource]` lines. In the second line you'll want t
 
 The rest of the lines that matter to us I will try to explain what they do to the best of my knowledge. I'm not an expert but if I find out more info I'll make sure to update this guide. On a side note if you have more info that I don't or if I got something wrong, reach out to me on the modding discord and I'll make sure to update the table.
 
+|Value|Means|
+|-----|-----|
+|string|Anything inside ""|
+|bool|true/false|
+|int|whole number, ie 7|
+|float|decimal,  ie 7.123|
+
 |Property|Value|Description|
 |--------|-----|-----------|
-|item_name|"string"||
-|item_description|"string"||
-|catch_blurb|"string"||
-|hold_offset|float||
+|item_name|"string"|Name that shows when you catch and on tooltip when you hover in your inventory|
+|item_description|"string"|Shows below name in tooltip|
+|catch_blurb|"string"|Shows when you catch it, usually a "joke"|
+|hold_offset|float|How far away you hold it when you catch or equip. Default value should be ok|
 |category|"string"||
-|tier|int||
-|catch_difficulty|float||
-|catch_speed|float||
+|tier|int|Tier of the fish; 0,1,2|
+|catch_difficulty|float|Affects how many clicks to catch|
+|catch_speed|float|Affects speed of reel when catching|
 |loot_table|"string"||
-|loot_weight|float||
-|average_size|float||
-|sell_value|int||
-|sell_multiplier|float||
-|obtain_xp|int||
-|rare|bool||
+|loot_weight|float|How rare it is compared to other fish in the pool|
+|average_size|float|Above 100 for really big, below 100 for really small|
+|sell_value|int|How much it sells for|
+|sell_multiplier|float|Affects value based on rarity|
+|obtain_xp|int|Xp gained from catching successfully|
+|rare|bool|Weather or not its considered rare like the golden fish and rain fish|

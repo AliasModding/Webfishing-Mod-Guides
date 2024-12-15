@@ -51,3 +51,5 @@ And the main.gd file is the script that's going to bring it all together.
 ### Making Your Fish
 Most of the fish in this game are 256x256 pixels in size with a few exceptions. You can look at the base fish in the game to see what other sizes are used or you can expirement with sizes yourself to see how the look in game. For this guide we will just stick with 256x256.
 
+I like to use [Photopea](https://www.photopea.com) for anything 2d, so that's what we'll use to make our fish. If you haven't heard of it or used it before it's basically free photoshop you can use in your browser without downloading anything. 
+

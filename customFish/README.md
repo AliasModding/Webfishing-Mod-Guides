@@ -94,11 +94,10 @@ The rest of the lines that matter to us I will try to explain what they do to th
 |item_description|"string"|Shows below name in tooltip|
 |catch_blurb|"string"|Shows when you catch it, usually a "joke"|
 |hold_offset|float|How far away you hold it when you catch or equip. Default value should be ok|
-|category|"string"||
 |tier|int|Tier of the fish; 0,1,2|
 |catch_difficulty|float|Affects how many clicks to catch|
 |catch_speed|float|Affects speed of reel when catching|
-|loot_table|"string"||
+|loot_table|"string"|lake, ocean, void, water_trash|
 |loot_weight|float|How rare it is compared to other fish in the pool|
 |average_size|float|Above 100 for really big, below 100 for really small|
 |sell_value|int|How much it sells for|

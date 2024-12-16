@@ -120,7 +120,7 @@ The rest of the lines that matter to us I will try to explain what they do to th
 |catch_difficulty|float|Affects how many clicks to catch|
 |catch_speed|float|Affects speed of reel when catching|
 |loot_table|"string"|lake, ocean, void, water_trash|
-|loot_weight|float|How rare it is compared to other fish in the pool|
+|loot_weight|float|How rare it is compared to other fish in the pool. Higher value = less rarity|
 |average_size|float|Above 100 for really big, below 100 for really small|
 |sell_value|int|How much it sells for|
 |sell_multiplier|float|Affects value based on rarity|

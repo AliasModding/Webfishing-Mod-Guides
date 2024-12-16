@@ -2,9 +2,18 @@
 Guide to walk you through using lure to add custom fish to the game.
 
 # Table of Contents
-- [Before we get started...](#before-we-get-started)
-  -[Set up the environment](#set-up-the-environment)
-  -[Get Sulayre's Lure mod](#get-sulayres-lure-mod)
+* [Before we get started...](#before-we-get-started)
+  * [Set up the environment](#set-up-the-environment)
+  * [Get Sulayre's Lure mod](#get-sulayres-lure-mod)
+  * [Auto load the Lure mod](#auto-load-the-lure-mod)
+* [Start Making Fish](#start-making-fish)
+  * [Setting up](#setting-up)
+  * [Making Your Fish](#making-your-fish)
+    * [Photopea](#photopea)
+* [The Tres File](#the-tres-file)
+  * [Table](#table)
+* [The main.gd file](the-maingd-file)
+  
 ## Before we get started...
 ### Set up the environment
 
@@ -82,6 +91,8 @@ There are some lines that you won't need to touch, so we won't go over those. We
 At the top you'll see 2 `[ext_resource]` lines. In the second line you'll want to change the `path=""` to point to your png file for this fish. ex. `[ext_resource path="res://mods/Steve.MyCoolFish/Assets/customBass.png" type="Texture" id=2]`
 
 The rest of the lines that matter to us I will try to explain what they do to the best of my knowledge. I'm not an expert but if I find out more info I'll make sure to update this guide. On a side note if you have more info that I don't or if I got something wrong, reach out to me on the modding discord and I'll make sure to update the table.
+
+### Table
 
 |Value|Means|
 |-----|-----|

@@ -110,7 +110,7 @@ This should be in the root of your mod folder. The main.gd is the part of your m
 There is a mainTemplate.gd in the Templates folder that you can copy into your mod folder. If you do that make sure to rename it to main.gd. Otherwise you can right click your mod folder and select `new script`, name it main, and click `create`. You can `ctrl-a` `del` to erase everything. Your main should look like this
 
 <pre>
- extends Node
+extends Node
 
 const ID = "YourAuthorName.YourModName"
 onready var Lure = get_node("/root/SulayreLure")
@@ -119,5 +119,42 @@ func _ready():
 	Lure.add_content(ID, "fishName", "mod://Resources/fishName.tres")
 </pre>
 
-replace the `const ID` with "your name" "." "your mod name".  This should also be the same as the name of your mod folder.
-under `func _ready():` replace `fishName` with the name of your fish, and replace the `fishName.tres` with the name of your .tres file.
+Replace the `const ID` with "your name" "." "your mod name".  This should also be the same as the name of your mod folder.
+Under `func _ready():` replace `fishName` with the name of your fish, and replace the `fishName.tres` with the name of your .tres file.
+This is what I was talking about when I said to keep the names the same; your png, your tres, and the name of the fish should be the same just to cut down on confusion. So if fish is named `customBass`, then you should have a `customBass.png` and a `customBass.tres`.
+so your `func _ready():` should contain `Lure.add_content(ID, "customBass", "mod://Resources/customBass.tres")`
+
+## Final Stages
+
+### Testing
+At this point you can go ahead and press `F5` to launch the game in the editor and try to go catch your fish to make sure everything is working how you want it to. I suggest initially setting the loot_weight high and rarity to 0, and then fishing with just worms to make sure you can catch the fish and it looks good when you catch it. After that you can set those properties to what you want them to be
+
+### Exporting
+At this point youre ready to export your mod and get it ready to share. You can go back to [part 7](https://github.com/BlueberryWolf/WEBFISHINGModdingGuide?tab=readme-ov-file#7-exporting-your-mod) and [part 8](https://github.com/BlueberryWolf/WEBFISHINGModdingGuide?tab=readme-ov-file#8-adding-the-mod-to-webfishing) of BlueberryWolf's guide and follow along to export your mod.
+
+### Thunderstore Formatting
+If you dont plan on uploading your mod to thunderstore you can skip this part. If you do plan on doing it, youll need to create a few more files for your mod. Start by copying the folder with your exported mod.pck and manifest files into a new folder somewhere like your desktop. Inside this new folder you'll need to make some new files, and name them the following. If your computer says anything about modifying extensions just accept. Files you'll need are
+* README.md (this file will be the content of your mod page on the thunderstore site. written in markdown formatting. it can be simple if you want it to be.)
+* icon.png (an icon to distinguish your mod)
+* manifest.json (yes another one, and no its not the same)
+* CHANGELOG.md (optional; use to list changes between updates of your mod)
+
+#### README.md
+This file will be used to generate the page details of your thunderstore mod page. It is written in markdown code, which is very simple and pretty easy to learn. You can make this as simple as you want or as complex as you want.
+
+#### manifest.json
+This is the same file that you made after you exported your mod but its contents will be a bit different than that other one. It'll need to look something like this
+
+<pre>
+{
+  "name": "",
+  "description": "",
+  "version_number": "1.0.0",
+  "website_url": "",
+  "dependencies": [
+    "Sulayre-Lure-4.2.2"
+  ]
+}
+</pre>
+
+`name` will be the name of your mod. So if your Steve.ReallyCoolMod, `name` should be `"ReallyCoolMod"`. `description` is just a short description of your mod. If you made your README more on the complex side, you can probably just use the first line or two of that here. If it was more on the simple side, you can probably just use the whole thing here. Keep in mind this wont format markdown code, so just use plain text here. `version_number` is what youll need to change everytime you update your mod on thunderstore, you can leave it at 1.0.0 and next update change it to 1.0.1, or 1.1.0, or go 2.0.0.... whatever you want. Just make sure you change it before you upload a new update otherwise thunderstore will tell you it already exists. `website_url` is where you can put a link to your github page for your mod if you made one, otherwise you can leave it empty, but either way it does need to be there, empty or not. `dependencies` is where you list any mods you used to make your mod, i.e. Sulayre-Lure. Thunderstore also wants you to give a version for each dependency so you may need to look up what version youre using so you can list it correctly. Should be Author-Mod-Version, i.e. `Sulayre-Lure-4.2.2`

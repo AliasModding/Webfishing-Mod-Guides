@@ -13,6 +13,15 @@ Guide to walk you through using lure to add custom fish to the game.
 * [The Tres File](#the-tres-file)
   * [Table](#table)
 * [The main.gd file](#the-maingd-file)
+* [Final Stages](#final-stages)
+  * [Testing](#testing)
+  * [Exporting](#exporting)
+  * [Thunderstore Formatting](#thunderstore-formatting)
+    * [README.md](#readmemd)
+    * [manifest.json](#manifestjson)
+  * [Uploading](#uploading)
+* [Congratz! You're Done!](congratz-youre-done)
+    
   
 ## Before we get started...
 ### Set up the environment

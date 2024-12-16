@@ -123,7 +123,7 @@ The rest of the lines that matter to us I will try to explain what they do to th
 |loot_weight|float|How rare it is compared to other fish in the pool. Higher value = less rarity|
 |average_size|float|Above 100 for really big, below 100 for really small|
 |sell_value|int|How much it sells for|
-|sell_multiplier|float|Affects value based on rarity|
+|sell_multiplier|float|Affects value based on rarity. i.e oppulent vs normal will be worth more based on this value|
 |obtain_xp|int|Xp gained from catching successfully|
 |rare|bool|Weather or not its considered rare like the golden fish and rain fish|
 

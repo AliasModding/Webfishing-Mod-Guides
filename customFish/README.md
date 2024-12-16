@@ -2,7 +2,9 @@
 Guide to walk you through using lure to add custom fish to the game.
 
 # Table of Contents
-
+- [Before we get started...](#before-we-get-started)
+  -[Set up the environment](#set-up-the-environment)
+  -[Get Sulayre's Lure mod](#get-sulayres-lure-mod)
 ## Before we get started...
 ### Set up the environment
 

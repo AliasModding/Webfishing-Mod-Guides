@@ -106,4 +106,18 @@ The rest of the lines that matter to us I will try to explain what they do to th
 |rare|bool|Weather or not its considered rare like the golden fish and rain fish|
 
 ## The main.gd file
+This should be in the root of your mod folder. The main.gd is the part of your mod that gets loaded when you start the game, running whatever code is inside. Ours will be simple, we're just gunna initialize Lure, set a variable, and tell Lure to load our custom fish into the game.
+There is a mainTemplate.gd in the Templates folder that you can copy into your mod folder. If you do that make sure to rename it to main.gd. Otherwise you can right click your mod folder and select `new script`, name it main, and click `create`. You can `ctrl-a` `del` to erase everything. Your main should look like this
 
+<pre>
+ extends Node
+
+const ID = "YourAuthorName.YourModName"
+onready var Lure = get_node("/root/SulayreLure")
+
+func _ready():
+	Lure.add_content(ID, "fishName", "mod://Resources/fishName.tres")
+</pre>
+
+replace the `const ID` with "your name" "." "your mod name".  This should also be the same as the name of your mod folder.
+under `func _ready():` replace `fishName` with the name of your fish, and replace the `fishName.tres` with the name of your .tres file.

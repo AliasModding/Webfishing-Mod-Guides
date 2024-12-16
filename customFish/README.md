@@ -12,7 +12,7 @@ Guide to walk you through using lure to add custom fish to the game.
     * [Photopea](#photopea)
 * [The Tres File](#the-tres-file)
   * [Table](#table)
-* [The main.gd file](the-main-gd-file)
+* [The main.gd file](the-main.gd-file)
   
 ## Before we get started...
 ### Set up the environment

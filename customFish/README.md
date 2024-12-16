@@ -20,7 +20,7 @@ Guide to walk you through using lure to add custom fish to the game.
     * [README.md](#readmemd)
     * [manifest.json](#manifestjson)
   * [Uploading](#uploading)
-* [Congratz! You're Done!](congratz-youre-done)
+* [Congratz! You're Done!](#congratz-youre-done)
     
   
 ## Before we get started...

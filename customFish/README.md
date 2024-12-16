@@ -1,5 +1,5 @@
-# Webfishing-Mod-Guides
-Guides for making different kinds of mods for a game called webfishing
+# Making Custom Fish For WEBFISHING
+Guide to walk you through using lure to add custom fish to the game.
 
 # Table of Contents
 
@@ -158,3 +158,21 @@ This is the same file that you made after you exported your mod but its contents
 </pre>
 
 `name` will be the name of your mod. So if your Steve.ReallyCoolMod, `name` should be `"ReallyCoolMod"`. `description` is just a short description of your mod. If you made your README more on the complex side, you can probably just use the first line or two of that here. If it was more on the simple side, you can probably just use the whole thing here. Keep in mind this wont format markdown code, so just use plain text here. `version_number` is what youll need to change everytime you update your mod on thunderstore, you can leave it at 1.0.0 and next update change it to 1.0.1, or 1.1.0, or go 2.0.0.... whatever you want. Just make sure you change it before you upload a new update otherwise thunderstore will tell you it already exists. `website_url` is where you can put a link to your github page for your mod if you made one, otherwise you can leave it empty, but either way it does need to be there, empty or not. `dependencies` is where you list any mods you used to make your mod, i.e. Sulayre-Lure. Thunderstore also wants you to give a version for each dependency so you may need to look up what version youre using so you can list it correctly. Should be Author-Mod-Version, i.e. `Sulayre-Lure-4.2.2`
+
+### Uploading
+After you make those files you should have a folder structure similar to this...
+
+<pre>
+.
+├── Steve-ReallyCoolMod/
+│   ├── Steve.ReallyCoolMod.pck
+│   └── manifest.json
+├── icon.png
+├── manifest.json
+└── README.md
+</pre>
+
+Now you can highlight everything and right click, click `compress to zip`, name the zip AuthorName-ModName, i.e. `Steve-ReallyCoolMod`. Note we're using dashes here and for the folder name instead of periods.. im not 100% sure thats nessecary, but all the mods in my gdweave folder from thunderstore look like that so I stuck with it too.
+Now you can use [this link](https://thunderstore.io/c/webfishing/create/) to upload your mod to thunderstore. If you forgot something or did something wrong, Thunderstore will try its best to tell you what you need to fix to complete the upload. After uploading, your mod page will be publicly available, so you can copy the link and share it wherever you'd like. The thunderstore app takes some time to update and include your mod.
+
+## Congratz! You're Done!
